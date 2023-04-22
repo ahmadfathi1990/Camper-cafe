@@ -1,0 +1,104 @@
+:root {
+    --font-family-1: 'Lato', sans-serif;
+    --font-family-2: Impact, serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.content { 
+    position: relative;
+    background: url(img/coffee-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.menu {
+    position: absolute;
+    background-color: #deb887;
+    width: 30%;
+    height: 80%;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 35%;
+}
+.title {
+    font-size: 2rem;
+    font-weight:900;
+    font-family: var(--font-family-2);
+}
+.title-2 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.desc {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.line {
+    height: 3px;
+    width: 80%;
+    background-color: #a52a2a;
+    margin: 10px auto 0 auto;
+    margin-bottom: 5px;
+}
+
+.menu img {
+    width: 40px;
+}
+.coffee-type {
+    width: 73%;
+    text-align: left;
+    padding-left: 20px;
+}
+.price {
+    width: 20%;
+}
+
+.article-item p {
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.btn {
+    font-size: 13px;
+    padding-top: 10px;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    color: #a52a2a;
+}
+.end {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+@media (min-width:950px) and (max-width:1150px) {
+    .menu {
+        width: 35%;
+    }
+}
+
+@media (max-width:950px) {
+
+    .menu {
+        width: 80%;
+        align-content: center;
+        
+    }
+    .title {
+        font-size: 18px;
+    }
+
+}
